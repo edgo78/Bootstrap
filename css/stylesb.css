@@ -11,48 +11,41 @@ h2 {
 }
 
 header h2 {
-    color: #CEC8FF;
+    color: #0af3a5;
 }
 
 .site-footer {
-    background-image: linear-gradient(#CEC8FF, white);
+    background-image: linear-gradient(#75abb3, rgb(25, 228, 167));
     padding: 20px 0;
 }
 
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    background-image: linear-gradient(to right, #3102ff, #3046C5, #064894);
     color: white;
 }
 
 .row-content {
     padding: 50px 0;
-    border-bottom: 1px ridge;
+    border-bottom: 5px ridge;
     min-height: 200px;
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color: #09008d;
 }
 
 .tab-content {
-    border: 1px solid #DDD;
+    border: 1px solid rgb(173, 116, 116);
     border-top: none;
     padding: 10px;
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(4, 151, 16, 0.712);
 }
 
 .carousel {
     border: solid #5637DD;
-}
-
-#carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
 }
