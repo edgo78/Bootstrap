@@ -40,46 +40,47 @@
                                     <h3 class="card-header text-light bg-info">Reserve a Campsite</h3>
                                     <div class="card-body bg-light text-dark">
                                         <form id="reserveForm">
-                                        <div class="row form-group">
-                                            <label for="numCampers" class="col-sm-6 col-form-label form-check-label">Number of Campers</label>
-                                            <div class="col-sm-6 col-form-label form-check-label">
-                                                <select class="form-control" name="numCampers" id="numCampers">
-                                                    <option value="Select">Select...</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                </select>
+                                            <div class="row form-group">
+                                                <label for="numCampers" class="col-sm-6 col-form-label form-check-label">Number of Campers</label>
+                                                <div class="col-sm-6 col-form-label form-check-label">
+                                                    <select class="form-control" name="numCampers" id="numCampers">
+                                                        <option value="Select">Select...</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row form-group">
-                                            <label for="date" class="col-sm-6 col-form-label form-check-label">Date</label>
-                                            <div class="col-sm-6 col-form-label form-check-label">
-                                                <input class="form-control" type="date" id="date" name="date">
+                                            <div class="row form-group">
+                                                <label for="date" class="col-sm-6 col-form-label form-check-label">Date</label>
+                                                <div class="col-sm-6 col-form-label form-check-label">
+                                                    <input class="form-control" type="date" id="date" name="date">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!--Radio button -->
-                                        <div class="row form-group">
-                                            <label for="campType" class="col-sm-6 col-form-label form-check-label" id="campType">Campsite Type: </label>
-                                            <div class="btn-group btn-group-toggle shift" data-toggle="buttons">
-                                                <label class="btn btn-success active">
-                                                    <input type="radio" name="siteType" id="siteTent" autocomplete="off" value="tent" checked> Tent
-                                                </label>
-                                                <label class="btn btn-primary">
-                                                    <input type="radio" name="siteType" id="siteRv" autocomplete="off" value="rv"> RV
-                                                </label>
+                                            <!--Radio button -->
+                                            <div class="row form-group">
+                                                <label for="campType" class="col-sm-6 col-form-label form-check-label" id="campType">Campsite Type: </label>
+                                                <div class="btn-group btn-group-toggle shift" data-toggle="buttons">
+                                                    <label class="btn btn-success active">
+                                                        <input type="radio" name="siteType" id="siteTent" autocomplete="off" value="tent" checked> Tent
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" name="siteType" id="siteRv" autocomplete="off" value="rv"> RV
+                                                    </label>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="text-left d-flex flex-row">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="words">Cancel</button>
+                                                        <button type="button" class="btn btn-primary" id="words">Search</button>
+                                                    </div>    
+                                                </div>
                                             </div>
                                         </form>
-                                        </div>
                                     </div>
-                                    <div class="container">
-                                        <div class="text-left d-flex flex-row">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="words">Cancel</button>
-                                            <button type="button" class="btn btn-primary" id="words">Search</button>
-                                        </div>    
-                                    </div>
+                                </div>     
                             </div>
                         </div>
                     </div>
@@ -299,7 +300,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
-        //$(function() { ... });  << IS THE SAME AS >>  $( document).ready(function() { ... });
+        //$(function() { ... });  << IS THE SAME AS >>  $(document).ready(function() { ... });
         //$(function() { ... }); THIS IS THE SHORT VERSION AND IT'S INTENDED VERSION TO USE
         $(function() {
             $(".carousel").carousel( { interval: 2000, pause: "false" } );
